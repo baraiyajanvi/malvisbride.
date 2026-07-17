@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malvis Bride</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        .navbar {
+            background: #60241E;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            color: white;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-left: 18px;
+        }
+
+        
+        .hero {
+            min-height: 55vh;
+            background: #60241E;
+            background-image: url(images/bride2.jpe);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-text {
+            color: white;
+        }
+
+        .hero-text h5 {
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 14px 35px;
+            border-radius: 40px;
+        }
+
+        .hero-btn:hover {
+            background: white;
+            color: #60241E;
+        }
+
+        /* About */
+        .about {
+            padding: 70px 0;
+            background-color: #FFBE91;
+        }
+
+        .about img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .about-title {
+            color: #B66A4D;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .about-heading {
+            font-size: 42px;
+            font-weight: 700;
+            color: #3B2A24;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+
+        .about-text {
+            color: #666;
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+        }
+
+        /* ================= SERVICES ================= */
+        .services {
+            padding: 90px 0;
+            background: #FDF3EE;
+        }
+
+        .services .container {
+            max-width: 1450px;
+        }
+
+        .service-subtitle {
+            color: #B66A4D;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        .service-title {
+            font-size: 48px;
+            color: #60241E;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        
+        .service-card {
+            background: #fff;
+            border-radius: 22px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            transition: .4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+        }
+
+        
+        .service-card img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+       
+        .service-content {
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-content h4 {
+            font-size: 26px;
+            color: #60241E;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .service-content p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+      
+        @media(max-width: 991px) {
+            .hero {
+                background-size: 50%;
+                min-height: 50vh;
+            }
+
+            .hero-text h1 {
+                font-size: 42px;
+            }
+
+            .about {
+                padding: 60px 0;
+            }
+
+            .about-heading {
+                font-size: 34px;
+            }
+
+            .service-title {
+                font-size: 36px;
+            }
+
+            .service-card img {
+                height: 300px;
+            }
+        }
+
+        @media(max-width: 767px) {
+            .navbar-collapse {
+                background: #60241E;
+                padding: 20px;
+                margin-top: 10px;
+            }
+
+            .hero {
+                min-height: 55vh;
+                background-image: linear-gradient(rgba(96, 36, 30, .55), rgba(96, 36, 30, .55)), url(images/bride2.jpe);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .hero-text {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 34px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                font-weight: 700;
+            }
+
+            .hero-text h5 {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+
+            .hero-text p {
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 22px;
+            }
+
+            .about {
+                padding: 50px 0;
+            }
+
+            .about-heading {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .about-title {
+                text-align: center;
+            }
+
+            .about-text {
+                text-align: center;
+                font-size: 15px;
+                line-height: 28px;
+            }
+
+            .feature-box {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .services {
+                padding: 60px 0;
+            }
+
+            .service-title {
+                font-size: 28px;
+            }
+
+            .service-card img {
+                height: 350px;
+            }
+
+            .service-content {
+                padding: 22px;
+            }
+
+            .service-content h4 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .service-content p {
+                font-size: 16px;
+                text-align: center;
+                line-height: 28px;
+            }
+        }
+
+        /* ================= PORTFOLIO / OUR WORK ================= */
+
+        .portfolio-section {
+            padding: 80px 0;
+            background-color: #FDF3EE;
+        }
+
+        .portfolio-title {
+            color: #B66A4D;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .portfolio-heading {
+            font-size: 36px;
+            font-weight: 700;
+            color: #60241E;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 24px; 
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            aspect-ratio: 1 / 1; 
+            width: 100%;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 24px;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(96, 36, 30, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.4s ease;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 24px;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .gallery-overlay p {
+            font-size: 13px;
+            transform: translateY(20px);
+            transition: all 0.4s ease 0.1s;
+        }
+
+        .gallery-item:hover h4,
+        .gallery-item:hover p {
+            transform: translateY(0);
+        }
+
+        .mobile-slide-card {
+            position: relative;
+            height: 420px;
+            background: #000;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .mobile-slide-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+            border-radius: 24px;
+        }
+
+        .mobile-slide-card .carousel-caption {
+            border-radius: 12px;
+            padding: 15px;
+            bottom: 30px;
+            left: 5%;
+            right: 5%;
+        }
+
+        .mobile-slide-card .carousel-caption h5 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .mobile-slide-card .carousel-caption p {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #60241E;
+        }
+
+        @media(max-width: 991px) {
+            .portfolio-heading {
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width: 767px) {
+            .portfolio-heading {
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .portfolio-title {
+                text-align: center;
+            }
+
+       /* ================= LUXURY MAROON PRICING SECTION ================= */
+
+.luxury-pricing-section {
+    background-color: #60241E; 
+    padding: 80px 0;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.luxury-container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.luxury-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.luxury-subtitle {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8C766D; 
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.luxury-heading {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #60241E; 
+}
+
+.luxury-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #60241E; 
+    margin: 18px auto 0 auto;
+}
+
+/* Pricing List Container */
+.luxury-pricing-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.luxury-pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(96, 36, 30, 0.15); 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.luxury-pricing-row:last-child {
+    border-bottom: none;
+}
+
+.luxury-name-col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.luxury-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #60241E; 
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.luxury-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #60241E; 
+}
+
+.luxury-price-col {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-shrink: 0;
+    justify-content: flex-end;
+}
+
+.luxury-old-price {
+    font-size: 18px;
+    color: #8C766D;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.luxury-new-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #60241E; 
+}
+
+.luxury-save-badge {
+    background-color: #60241E; 
+    border: 1px solid rgba(96, 36, 30, 0.2);
+    color: #60241E; 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 768px) {
+    .luxury-heading {
+        font-size: 32px;
+    }
+
+    .luxury-pricing-row {
+        padding: 20px 0;
+    }
+
+    .luxury-name {
+        font-size: 15px;
+    }
+
+    .luxury-price-col {
+        gap: 12px;
+    }
+
+    .luxury-old-price {
+        font-size: 14px;
+    }
+
+    .luxury-new-price {
+        font-size: 18px;
+    }
+
+    .luxury-save-badge {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+}
+/* ================= FOOTER ================= */
+    
+
+      
+     }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            𝓜𝓪𝓵𝓿𝓲𝓼 𝓑𝓻𝓲𝓭𝓮
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-text">
+                        <h5>Bridal Makeup Artist</h5>
+                        <h1>Your Dream <br> Bridal Look</h1>
+                        <p>Professional bridal makeup & hairstyling services.</p>
+                        <p>Transform your wedding day with flawless bridal makeup, elegant hairstyles, and personalized beauty services designed to enhance your natural charm and create a timeless bridal look you'll cherish forever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/about.jpe" class="img-fluid rounded-4 shadow" alt="Bridal Makeup">
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="about-title">ABOUT MALVIS BRIDE</h6>
+                    <h2 class="about-heading">Crafting Elegant Bridal Looks With Passion & Perfection</h2>
+                    <p class="about-text">
+                        At Malvis Bride, we believe every bride deserves to feel confident, beautiful, and unforgettable on her special day. Our bridal makeup and hairstyling services are designed to enhance your natural beauty while creating a timeless look that reflects your unique personality.
+                    </p>
+                    <p class="about-text">
+                        Using premium beauty products, modern techniques, and personalized styling, we ensure every bride receives a flawless, long-lasting makeover that stays fresh throughout every wedding celebration.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6 mb-3">
+                            <div class="feature-box" style="background-color: #60241E; color: #FFF7F2;">
+                                ✔ HD Bridal Makeup
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="feature-box" style="background-color: #60241E; color: #FFF7F2;">
+                                ✔ Premium Products
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-box" style="background-color: #60241E; color: #FFF7F2;">
+                                ✔ Long Lasting Look
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-box" style="background-color: #60241E; color: #FFF7F2;">
+                                ✔ Professional Hairstyling
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services py-5" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="service-subtitle">OUR SERVICES</h6>
+                <h2 class="service-title">Bridal Makeup Services</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <img src="images/mackup.jpe" alt="Bridal Makeup">
+                        <div class="service-content">
+                            <h4>Bridal Makeup</h4>
+                            <p>Achieve a flawless and elegant bridal look with premium makeup products and professional techniques for your special day.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <img src="images/mackup2.jpe" alt="Hair Styling">
+                        <div class="service-content">
+                            <h4>Hair Styling</h4>
+                            <p>Elegant bridal hairstyles designed to perfectly complement your wedding outfit and personality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <img src="images/reception.jpe" alt="Reception Look">
+                        <div class="service-content">
+                            <h4>Reception Look</h4>
+                            <p>Glamorous reception makeup with a long-lasting finish for your unforgettable evening celebration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="portfolio-title">PORTFOLIO</h6>
+                <h2 class="portfolio-heading">Real Brides, Real Smiles</h2>
+            </div>
+
+            <!-- ૧. મોટી અને મીડિયમ સ્ક્રીન માટે ગ્રીડ લેઆઉટ (Desktop & Tablet) -->
+            <div class="row g-4 d-none d-md-flex">
+
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/bride1 (1).jpeg" alt="Bridal Look 1">
+                        <div class="gallery-overlay">
+                            <h4>Elegant Bride</h4>
+                            <p>Traditional Ceremony Look</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/bride1 (2).jpeg" alt="Bridal Look 2">
+                        <div class="gallery-overlay">
+                            <h4>Modern Glow</h4>
+                            <p>Minimalist Aesthetic Look</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/hair.jpe" alt="Bridal Look 3">
+                        <div class="gallery-overlay">
+                            <h4>Royal Bun</h4>
+                            <p>Elegant Floral Hair Styling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/mackup3.jpe" alt="Bridal Look 4">
+                        <div class="gallery-overlay">
+                            <h4>Reception Glam</h4>
+                            <p>Shimmering Evening Finish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/mackup4.jpe" alt="Bridal Look 5">
+                        <div class="gallery-overlay">
+                            <h4>Classic Red</h4>
+                            <p>Timeless Bridal Heritage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/mackup6.jpe" alt="Bridal Look 6">
+                        <div class="gallery-overlay">
+                            <h4>Sangeet Vibe</h4>
+                            <p>Playful & Radiant Makeup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/mackup7.jpe" alt="Bridal Look 7">
+                        <div class="gallery-overlay">
+                            <h4>Haldi Touch</h4>
+                            <p>Dewy & Fresh Look</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-item">
+                        <img src="images/mackup8.jpe" alt="Bridal Look 8">
+                        <div class="gallery-overlay">
+                            <h4>Nude Palette</h4>
+                            <p>Subtle & Sophisticated Look</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ૨. ફક્ત મોબાઈલ સ્ક્રીન માટે કેરોયુઝલ સ્લાઈડર (Mobile Only) -->
+            <div id="workMobileCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#workMobileCarousel" data-bs-slide-to="7"></button>
+                </div>
+
+                <!-- Carousel Items -->
+                <div class="carousel-inner rounded-4 shadow">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="mobile-slide-card">
+                            <img src="images/bride1 (1).jpeg" class="d-block w-100" alt="Bridal Look 1">
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/bride1 (2).jpeg" class="d-block w-100" alt="Bridal Look 2">
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/hair.jpe" class="d-block w-100" alt="Bridal Look 3">
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/mackup3.jpe" class="d-block w-100" alt="Bridal Look 4">
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/mackup4.jpe" class="d-block w-100" alt="Bridal Look 5">
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/mackup6.jpe" class="d-block w-100" alt="Bridal Look 6">
+                        </div>
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/mackup7.jpe" class="d-block w-100" alt="Bridal Look 7">
+                        </div>
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="carousel-item">
+                        <div class="mobile-slide-card">
+                            <img src="images/mackup8.jpe" class="d-block w-100" alt="Bridal Look 8">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#workMobileCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#workMobileCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- Luxury Pricing Section -->
+<section id="portfolio" class="py-5" style="background-color: #FDF3EE; font-family: 'Playfair Display', Arial, sans-serif;">
+    <div class="container" style="max-width: 1100px;">
+        
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <span class="d-block text-uppercase fw-semibold mb-2" style="color: #8C766D; letter-spacing: 3px; font-size: 14px;">Exclusive Packages</span>
+            <h2 class="fw-bold mb-3" style="color: #60241E; font-size: 40px;">Our HD Makeup Pricing</h2>
+            <div class="mx-auto" style="width: 80px; height: 2px; background-color: #60241E;"></div>
+        </div>
+
+        <!-- Pricing List using Bootstrap Grid (બધી સ્ક્રીન માટે એકસરખું) -->
+        <div class="w-100">
+            
+            <!-- Row 1 -->
+            <div class="row align-items-center py-3 border-bottom" style="border-color: rgba(96, 36, 30, 0.15) !important;">
+                <!-- Left: Name -->
+                <div class="col-12 col-sm-7 d-flex align-items-center mb-2 mb-sm-0">
+                    <span class="rounded-circle me-3" style="width: 8px; height: 8px; background-color: #60241E; flex-shrink: 0;"></span>
+                    <span class="fw-bold" style="color: #60241E; font-size: 18px;">Engagement</span>
+                </div>
+                <!-- Right: Prices -->
+                <div class="col-12 col-sm-5 d-flex align-items-center justify-content-sm-end justify-content-start gap-3">
+                    <span class="text-decoration-line-through fw-medium" style="color: #8C766D; font-size: 16px;">₹10,667</span>
+                    <span class="fw-extrabold" style="color: #60241E; font-size: 22px; font-weight: 800;">₹8,000</span>
+                    <span class="badge rounded-pill fw-bold" style="background-color: #F3E6DF; color: #60241E; border: 1px solid rgba(96, 36, 30, 0.2); padding: 6px 14px; font-size: 12px;">Save 25%</span>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row align-items-center py-3 border-bottom" style="border-color: rgba(96, 36, 30, 0.15) !important;">
+                <div class="col-12 col-sm-7 d-flex align-items-center mb-2 mb-sm-0">
+                    <span class="rounded-circle me-3" style="width: 8px; height: 8px; background-color: #60241E; flex-shrink: 0;"></span>
+                    <span class="fw-bold" style="color: #60241E; font-size: 18px;">Haldi, Mehndi, Sangeet, Mandap, Grah Santi</span>
+                </div>
+                <div class="col-12 col-sm-5 d-flex align-items-center justify-content-sm-end justify-content-start gap-3">
+                    <span class="text-decoration-line-through fw-medium" style="color: #8C766D; font-size: 16px;">₹8,667</span>
+                    <span class="fw-extrabold" style="color: #60241E; font-size: 22px; font-weight: 800;">₹6,500</span>
+                    <span class="badge rounded-pill fw-bold" style="background-color: #F3E6DF; color: #60241E; border: 1px solid rgba(96, 36, 30, 0.2); padding: 6px 14px; font-size: 12px;">Save 25%</span>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row align-items-center py-3 border-bottom" style="border-color: rgba(96, 36, 30, 0.15) !important;">
+                <div class="col-12 col-sm-7 d-flex align-items-center mb-2 mb-sm-0">
+                    <span class="rounded-circle me-3" style="width: 8px; height: 8px; background-color: #60241E; flex-shrink: 0;"></span>
+                    <span class="fw-bold" style="color: #60241E; font-size: 18px;">Wedding Ceremony</span>
+                </div>
+                <div class="col-12 col-sm-5 d-flex align-items-center justify-content-sm-end justify-content-start gap-3">
+                    <span class="text-decoration-line-through fw-medium" style="color: #8C766D; font-size: 16px;">₹14,000</span>
+                    <span class="fw-extrabold" style="color: #60241E; font-size: 22px; font-weight: 800;">₹10,500</span>
+                    <span class="badge rounded-pill fw-bold" style="background-color: #F3E6DF; color: #60241E; border: 1px solid rgba(96, 36, 30, 0.2); padding: 6px 14px; font-size: 12px;">Save 25%</span>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="row align-items-center py-3 border-bottom" style="border-color: rgba(96, 36, 30, 0.15) !important;">
+                <div class="col-12 col-sm-7 d-flex align-items-center mb-2 mb-sm-0">
+                    <span class="rounded-circle me-3" style="width: 8px; height: 8px; background-color: #60241E; flex-shrink: 0;"></span>
+                    <span class="fw-bold" style="color: #60241E; font-size: 18px;">Grand Reception</span>
+                </div>
+                <div class="col-12 col-sm-5 d-flex align-items-center justify-content-sm-end justify-content-start gap-3">
+                    <span class="text-decoration-line-through fw-medium" style="color: #8C766D; font-size: 16px;">₹14,000</span>
+                    <span class="fw-extrabold" style="color: #60241E; font-size: 22px; font-weight: 800;">₹10,500</span>
+                    <span class="badge rounded-pill fw-bold" style="background-color: #F3E6DF; color: #60241E; border: 1px solid rgba(96, 36, 30, 0.2); padding: 6px 14px; font-size: 12px;">Save 25%</span>
+                </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="row align-items-center py-3" style="border-color: rgba(96, 36, 30, 0.15) !important;">
+                <div class="col-12 col-sm-7 d-flex align-items-center mb-2 mb-sm-0">
+                    <span class="rounded-circle me-3" style="width: 8px; height: 8px; background-color: #60241E; flex-shrink: 0;"></span>
+                    <span class="fw-bold" style="color: #60241E; font-size: 18px;">Baby Shower</span>
+                </div>
+                <div class="col-12 col-sm-5 d-flex align-items-center justify-content-sm-end justify-content-start gap-3">
+                    <span class="text-decoration-line-through fw-medium" style="color: #8C766D; font-size: 16px;">₹7,333</span>
+                    <span class="fw-extrabold" style="color: #60241E; font-size: 22px; font-weight: 800;">₹5,500</span>
+                    <span class="badge rounded-pill fw-bold" style="background-color: #F3E6DF; color: #60241E; border: 1px solid rgba(96, 36, 30, 0.2); padding: 6px 14px; font-size: 12px;">Save 25%</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Luxury Contact Us Section -->
+
+<section id="contact" class="py-5" style="background-color: #FDF3EE; font-family: 'Playfair Display', Arial, sans-serif; min-height: 80vh; display: flex; align-items: center;">
+    <div class="container py-5" style="max-width: 800px;">
+        
+        <div class="text-center p-5 rounded-4" style="background-color: #ffffff; border: 1px solid rgba(96, 36, 30, 0.12); box-shadow: 0 15px 40px rgba(96, 36, 30, 0.04);">
+            
+            <!-- Header -->
+            <span class="d-block text-uppercase fw-semibold mb-2" style="color: #8C766D; letter-spacing: 4px; font-size: 13px;">Let's Connect</span>
+            <h2 class="fw-bold mb-4" style="color: #60241E; font-size: 38px;">Contact Us</h2>
+            <div class="mx-auto mb-5" style="width: 60px; height: 1.5px; background-color: #60241E;"></div>
+
+            <!-- Luxury Instagram Section -->
+            <div class="my-4">
+               
+                <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4" 
+                     style="width: 90px; height: 90px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); box-shadow: 0 10px 25px rgba(220, 39, 67, 0.25);">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </div>
+
+                <p class="text-muted mb-4 mx-auto" style="font-size: 16px; max-width: 450px; line-height: 1.6;">
+Follow us on Instagram for our latest bridal looks, behind-the-scenes, and bookings.                </p>
+
+                <!-- Instagram Username Link -->
+                <a href="https://instagram.com/tamar_insta_handle" target="_blank" class="insta-link d-inline-block py-3 px-5 fw-bold text-uppercase" 
+                   style="background-color: #60241E; color: #ffffff; letter-spacing: 2.5px; font-size: 14px; border: none; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">
+                    @malvis_bride
+                </a>
+            </div>
+
+            <!-- Footer Small Info (Optional) -->
+            <p class="text-muted mt-5 mb-0" style="font-size: 13px; letter-spacing: 1px;">
+                Direct Message (DM) us for bridal bookings & inquiries
+            </p>
+
+        </div>
+
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Footer Section -->
+   <!-- Footer Section -->
+   <!-- Footer Section -->
+<footer class="text-white py-5" style="background-color: #60241E !important; border-top: 4px solid #B66A4D;">
+    <div class="container text-center">
+        <!-- Brand Name / Logo -->
+        <h3 class="fw-bold mb-2" style="color: #FFF7F2; letter-spacing: 1px; font-size: 28px;">Luxury Bride</h3>
+        <p class="mx-auto mb-4" style="color: #FFBE91; max-width: 500px; font-size: 15px; line-height: 1.6;">
+            Contact us to make your special day more beautiful and memorable.
+        </p>
+        
+        <!-- Quick Links with Bootstrap Utility Classes -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <a href="#" class="text-decoration-none px-3 py-2 rounded-pill border transition-all" 
+               style="color: #FFF7F2 !important; background-color: #60241E !important; border-color: rgba(255, 255, 255, 0.3) !important; font-size: 14px;">
+               Home
+            </a>
+            <a href="#" class="text-decoration-none px-3 py-2 rounded-pill border transition-all" 
+               style="color: #FFF7F2 !important; background-color: #60241E !important; border-color: rgba(255, 255, 255, 0.3) !important; font-size: 14px;">
+               About Us
+            </a>
+            <a href="#" class="text-decoration-none px-3 py-2 rounded-pill border transition-all" 
+               style="color: #FFF7F2 !important; background-color: #60241E !important; border-color: rgba(255, 255, 255, 0.3) !important; font-size: 14px;">
+               Services
+            </a>
+            <a href="#" class="text-decoration-none px-3 py-2 rounded-pill border transition-all" 
+               style="color: #FFF7F2 !important; background-color: #60241E !important; border-color: rgba(255, 255, 255, 0.3) !important; font-size: 14px;">
+               Portfolio
+            </a>
+            <a href="#" class="text-decoration-none px-3 py-2 rounded-pill border transition-all" 
+               style="color: #FFF7F2 !important; background-color: #60241E !important; border-color: rgba(255, 255, 255, 0.3) !important; font-size: 14px;">
+               Contact
+            </a>
+        </div>
+
+        <hr style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin: 25px 0;">
+
+        <!-- Copyright & Credit -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" style="font-size: 14px; color: #E2C2B9;">
+            <p class="mb-2 mb-md-0">&copy; 2026 Luxury Bride. All Rights Reserved.</p>
+            <p class="mb-0">Designed & Developed by <span style="color: #FFBE91; font-weight: 600; letter-spacing: 0.5px;">Janvi Baraiya</span></p>
+        </div>
+    </div>
+</footer>
+</html>
